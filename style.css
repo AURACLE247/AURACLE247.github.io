@@ -118,20 +118,6 @@ img:hover {
 }
 
 
-@media (max-width: 768px) {
-    nav {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    nav ul {
-        flex-direction: column;
-        margin-top: 10px;
-    }
-
-    .hero {
-        height: 60vh;
-    }
     
     
     #hobbies h2 {

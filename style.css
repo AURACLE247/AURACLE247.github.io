@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial;
+    background: linear-gradient(135deg, #ff99cc, #ffe6f0);
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px;
+    background: rgba(255, 77, 166, 0.8);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+}
+
+.logo {
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+
+
+nav ul li a::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background: white;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    transition: 0.3s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+
+.hero {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 1s ease-in;
+}
+
+.hero span {
+    color: #ff007f;
+}
+
+
+.card {
+    background: rgba(255,255,255,0.6);
+    margin: 40px auto;
+    padding: 30px;
+    width: 80%;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    text-align: center;
+}
+
+
+img {
+    width: 120px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    transition: 0.3s;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+
+.hobby-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.hobby {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+
+.hobby:hover {
+    transform: translateY(-10px);
+}
+
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .hero {
+        height: 60vh;
+    }
+    
+    
+    #hobbies h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #ff4da6;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+img {
+    transition: 0.3s;
+}
+
+img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #ff4da6;
+}
+
+section {
+    min-height: 75vh;   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    align-items: center;      
+    padding: 20px;
+}
+section {
+    margin-bottom: 40px;
+}
+#about {
+    background-color: #ffe6f0;
+}
+
+#hobbies {
+    background-color: #ffd6eb;
+}
+
+#contact {
+    background-color: #ffcce6;
+}
+html {
+    scroll-behavior: smooth;
+}
+}

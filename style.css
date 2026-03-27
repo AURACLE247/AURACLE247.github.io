@@ -167,4 +167,13 @@ section {
 html {
     scroll-behavior: smooth;
 }
+section {
+    scroll-margin-top: 60px;
+}
+#about {
+    margin-bottom: 50px;
+}
+
+#hobbies {
+    margin-top: 60px;
 }
